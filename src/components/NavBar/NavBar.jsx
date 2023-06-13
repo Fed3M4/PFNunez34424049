@@ -6,7 +6,7 @@ import { CartWidget } from '../CartWidget/CartWidget';
 import { Link, NavLink } from "react-router-dom";
 import logo from '../../assets/img/Logo-mama.png'
 
-function NavBar({countCar}) {
+function NavBar() {
   return (
     <Navbar bg="dark" variant="dark" expand="xl">
       <Container>
@@ -29,7 +29,7 @@ function NavBar({countCar}) {
           </Nav>
         </Navbar.Collapse>
       </Container>
-      <CartWidget countCar2 = {countCar}/>
+      <CartWidget/>
     </Navbar>
   );
 }

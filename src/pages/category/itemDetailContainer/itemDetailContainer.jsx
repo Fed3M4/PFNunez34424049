@@ -3,7 +3,7 @@ import { itemsBautismo } from "../../../components/ItemListContainer/itemsBautis
 import Button from "react-bootstrap/Button";
 const ItemDetailContainer = ({agregarAlCarrito}) => {
     const {id} = useParams()
-    const item = itemsBautismo.find((articulo) => articulo.id == id)
+    const item = itemsBautismo.find((articulo) => articulo.id === id)
     const handleClic = () => {
         agregarAlCarrito()
       }
