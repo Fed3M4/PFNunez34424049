@@ -26,6 +26,8 @@ function NavBar() {
                 Bautismos
               </NavDropdown.Item>
             </NavDropdown>
+            <NavLink className='nav-link' to={'/registrarse'}>Registrarse</NavLink>
+            <NavLink className='nav-link' to={'/inicio'}>Iniciar sesión</NavLink>
           </Nav>
         </Navbar.Collapse>
       </Container>

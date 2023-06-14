@@ -7,6 +7,7 @@ import { Nosotros } from "./pages/nosotros/Nosotros";
 import React, { useState } from "react";
 import { Footer } from "./components/Footer/footer";
 import { CartContext } from "./components/Context";
+import { SignUp } from "./pages/signup";
 function App() {
   const [countCar, setCountCar] = useState(0);
   const agregarAlCarrito = () => {
@@ -34,6 +35,7 @@ function App() {
               <ItemDetailContainer agregarAlCarrito={agregarAlCarrito} />
             }
           />
+          <Route path="/registrarse" element={<SignUp/>}/>
         </Routes>
         <Footer />
       </CartContext.Provider>
